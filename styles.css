@@ -4,6 +4,7 @@ body {
     margin:0;
     display:flex;
     flex-direction:row;
+    box-sizing:border-box;
 }
 
 @font-face {
@@ -39,19 +40,27 @@ body {
 }
 
 .right-pane {
-    height:100%;
     flex:3;
     display:flex;
-    gap:20px;
     flex-direction:column;
     font-family:'Montserrat';
-    justify-content:center;
+    background-color:#EFEFEF;
+}
+
+.form-container {
+    flex:1;
+    margin-bottom:50px;
 }
 
 .heading-container,
-form,
-.bottom-container {
+.log-in,
+.sign-up-area {
     padding-left:40px;
+    box-sizing:border-box;
+}
+
+.create-account {
+    margin-left:40px;
 }
 
 .heading-container {
@@ -59,7 +68,6 @@ form,
     display:flex;
     align-items:flex-end;
     width:100%;
-    background-color:#EFEFEF;
 }
 
 .heading {
@@ -69,11 +77,16 @@ form,
     margin-bottom:20px;
 }
 
-#sign-up-info {
+.sign-up-area {
     flex:1;
     display:flex;
     flex-wrap:wrap;
-    width:60%;
+    width:100%;
+    background-color:white;
+    box-shadow: 0px 3px 10px gray;
+    padding-top:10px;
+    padding-bottom:20px;
+    margin-bottom:20px;
 }
 
 input {
@@ -82,19 +95,19 @@ input {
 
 #sign-up-info .form-item input[type="email"]:focus,
 #sign-up-info .form-item input[type="text"]:focus {
-    background:rgb(219, 236, 255);
+    background:#EFEFEF;
+    border:none;
+    outline:1px solid #6d8bf8;
 }
 
 #sign-up-info .form-item input[type="email"]:invalid,
 #sign-up-info .form-item input[type="text"]:invalid {
-    border:1px solid rgb(172, 44, 44);
-    background:rgb(255, 200, 200);
+    border:1px solid rgb(252, 161, 161);
 }
 
 #sign-up-info .form-item input[type="email"]:valid,
 #sign-up-info .form-item input[type="text"]:valid {
-    border:1px solid rgb(61, 248, 173);
-    background:rgb(175, 252, 222);
+    border:1px solid #EFEFEF
 }
 
 .form-item {
@@ -105,17 +118,9 @@ input {
     gap:5px;
 }
 
-.bottom-container {
-    flex:1;
-    display:flex;
-    flex-direction: column;
-    gap:10px;
-    background-color:#EFEFEF;
-    padding-top:20px;
-}
-
-
-
 .create-account {
     width:fit-content;
+    font-family:'Montserrat';
+    padding:5px 10px 5px 10px;
+    margin-bottom:10px;
 }
