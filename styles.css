@@ -1,0 +1,121 @@
+body {
+    width:100vw;
+    height:100vh;
+    margin:0;
+    display:flex;
+    flex-direction:row;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+.left-pane {
+    flex:2;
+    display:flex;
+    background-image: url(space.jpeg);
+    background-size:cover;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo {
+    height:10vh;
+}
+
+.logo-banner {
+    font-family: 'Amatic SC';
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    font-size:10vh;
+    font-weight:bold;
+    width:100%;
+    color:white;
+    padding: 5vh 0 5vh 0;
+    background-color: rgba(0, 0, 0, 0.713);
+}
+
+.right-pane {
+    height:100%;
+    flex:3;
+    display:flex;
+    gap:20px;
+    flex-direction:column;
+    font-family:'Montserrat';
+    justify-content:center;
+}
+
+.heading-container,
+form,
+.bottom-container {
+    padding-left:40px;
+}
+
+.heading-container {
+    flex:1;
+    display:flex;
+    align-items:flex-end;
+    width:100%;
+    background-color:#EFEFEF;
+}
+
+.heading {
+    font-size:5vh;
+    font-weight:bold;
+    width:60%;
+    margin-bottom:20px;
+}
+
+#sign-up-info {
+    flex:1;
+    display:flex;
+    flex-wrap:wrap;
+    width:60%;
+}
+
+input {
+    width:80%;
+}
+
+#sign-up-info .form-item input[type="email"]:focus,
+#sign-up-info .form-item input[type="text"]:focus {
+    background:rgb(219, 236, 255);
+}
+
+#sign-up-info .form-item input[type="email"]:invalid,
+#sign-up-info .form-item input[type="text"]:invalid {
+    border:1px solid rgb(172, 44, 44);
+    background:rgb(255, 200, 200);
+}
+
+#sign-up-info .form-item input[type="email"]:valid,
+#sign-up-info .form-item input[type="text"]:valid {
+    border:1px solid rgb(61, 248, 173);
+    background:rgb(175, 252, 222);
+}
+
+.form-item {
+    width:40%;
+    margin: 10px 10px 10px 0px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.bottom-container {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    background-color:#EFEFEF;
+    padding-top:20px;
+}
+
+
+
+.create-account {
+    width:fit-content;
+}
